@@ -1,4 +1,7 @@
+
 name = "Adam"
-age = 20
-height = 180
-print(f"My name is {name}. I am {age} years old and my height is {height}cm. In 6 years i will be {age + 6}.")
+years = 12
+height = 170
+soon = 18
+print(f"My name is {name}. I am {years} years old, and my height is {height} cm.
+In 6 years I will be {soon} years old.  "  )

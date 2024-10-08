@@ -1,9 +1,14 @@
+###
+# A program for swapping two varable values
+#
 x = 7
 y = 34
-z = 0 
-print("Before swapping: x=", x, "y=", y, "z=", z)
+z = 0 # additional, auxiliary variable
+print("Before swapping: x=", x, "y=", y)
 
-x = 0
-y = 7
-z = 34
-print("After swapping: x=", x, "y=", y, "z=", z)
+# swap the values
+x=34
+y=7
+z=0
+
+print("After swapping: x=", x, "y=", y)

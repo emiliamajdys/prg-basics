@@ -6,7 +6,7 @@ plain_text = str('The early bird catches the worm')
 encrypted_text = ''
 
 for char in plain_text:
-     number = ord(plain_text) + 1
+     number = ord(plain_text) + 1+ char + encrypted_text
 
     
   

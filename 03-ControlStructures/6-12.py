@@ -1,7 +1,7 @@
 number = int(input('insert the number of bought products'))
 price = int(input('insert the price of the products '))
 if number>2:
-    pricea= number * price * 0,75
+    pricea= number * price * 0.75
     
 else :
     pricea = number * price 

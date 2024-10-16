@@ -1,19 +1,14 @@
-###
-# ATM (cash machine) simulator
-#
-balance = 1000  # Initial balance
-pin = '1111' # initial 4-digit PIN code
-
 while True:
     print()
     print("ATM Menu:")
     print("1. Check balance")
     print("2. Deposit")
     print("3. Withdraw")
-    
+    print("4. check password")
+    print("5. change password")
     print("6. Exit")
-    
-
+    pin = 1234
+    balance = 4000
     choice = input("Choose an option (1-6): ")
     print()
 
@@ -33,6 +28,14 @@ while True:
     elif choice == '6':
         print("Exiting... Thank you for using the ATM!")
         break  # Exit the loop
-    
+    elif choice == '5':
+        newpin= input('enter your new password:')
+        if newpin.isdigit()==True:
+            print('your pin is changed')
+        else:
+            print('your pin is incorrect')
+    elif choice =="4":
+        print(f'your pin is {pin}')
+
     else:
         print("Invalid option. Please try again.")

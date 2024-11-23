@@ -1,12 +1,9 @@
-def f(product):
-    if len(product)!=4:
-        print('this is not 4 digit')
-
-    if (int(product[0]) + int(product[1]) + int(product[2]))%(int(product[3])) == 0:
-        return True
-    else: 
+def f(product_code):
+    if len(product_code) != 4 or not product_code.isdigit():
         return False
-    
-code=str(input('give the 4 digit code: '))
-final=f(code)
-print(final)
+    digit = (int(product_code[0]) + int(product_code[1]) + int(product_code[2]))%7
+
+    return digit == int(product_code[3])
+
+result = input('Enter 4 digit number: ')
+print(f(result))

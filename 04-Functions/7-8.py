@@ -1,12 +1,15 @@
-def f(number,even):
-    conut=0
-    if even=="t":
-        conut += number%2==0
-    elif even=="f":
-        conut += number%2!=0
-    return conut
+def f(number, even):
 
-number=int(input('insert the numebrs: '))
-even=str(input('(t/f): '))
-final=f(number,even)
-print(final)
+    digit_sum = 0
+    
+    for digit in str(number):
+        digit = int(digit)
+        if (even and digit % 2 == 0) or (not even and digit % 2 != 0):
+            digit_sum += digit
+    
+    return digit_sum
+
+num = input('Enter your number: ')
+result = f(num)
+
+print(result)

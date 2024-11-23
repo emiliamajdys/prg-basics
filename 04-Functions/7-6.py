@@ -1,10 +1,10 @@
-def ifbinary(char):
-    for char in number:  
-        if char !="0" and char!= "1":
+def czy_binarna(liczba):
+    # Sprawdzamy, czy liczba zawiera tylko znaki '0' lub '1'
+    for cyfra in liczba:
+        if cyfra not in ('0', '1'):
             return False
-        else: 
-            return True
+    return True
         
-number = input('Insert the number: ')
-final = ifbinary(number)
+liczba = input('Insert the number: ')
+final = czy_binarna(liczba)
 print(final)

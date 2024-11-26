@@ -4,7 +4,7 @@ def is_subset(arr1, arr2):
             return False
     return True
 
-arr1 = [1, 2, 3]
+arr1 = [1, 2, 5]
 arr2 = [3, 2, 1, 4, 5]
 
 if is_subset(arr1, arr2):

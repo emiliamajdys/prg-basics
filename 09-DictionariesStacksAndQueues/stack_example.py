@@ -20,6 +20,14 @@ cards.put('Jack of Spades \u2660')
 ## prints number of elements of the stack
 print('Number of stack elements:', cards.qsize())
 
+cards.put(1)
+cards.put(2)
+cards.put(3)
+cards.put(4)
+cards.put(5)
+cards.put(6)
+cards.put(7)
+cards.put(8)
 # removes and prints elements from the top of the stack
 while not cards.empty():
     card = cards.get()

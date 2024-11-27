@@ -6,8 +6,11 @@ translations = {
 }
 translate=input('the word i want to translate is: ')
 
-for key in translations.items():
-    if translate==key:
-        print(key)
+def f(translate):
+    if translate in translations:
+
+        print(translations[translate])
     else:
         print(False)
+
+f(translate)
